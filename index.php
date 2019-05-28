@@ -19,11 +19,22 @@ $search = Usuario::search("Fo");
 
 echo json_encode($search);
 */
-
+/*
 $usuario = new Usuario();
 $usuario->login("user","12345");
 
-echo $usuario;
+echo $usuario;*/
 
+
+$aluno = new Usuario("Sidnei","daledele");
+
+
+
+
+
+
+$aluno->insert();
+
+echo $aluno;
 
  ?>
