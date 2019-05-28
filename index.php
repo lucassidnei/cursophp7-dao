@@ -24,17 +24,21 @@ $usuario = new Usuario();
 $usuario->login("user","12345");
 
 echo $usuario;*/
-
-
+/*adiciona um user
 $aluno = new Usuario("Sidnei","daledele");
-
-
-
-
-
-
 $aluno->insert();
-
 echo $aluno;
+*/
+
+$usuario = new Usuario();
+
+$usuario->loadByID(17);
+$usuario->update("lucas2131");
+
+echo $usuario;
+
+
+
+
 
  ?>

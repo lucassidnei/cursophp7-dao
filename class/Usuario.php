@@ -110,6 +110,18 @@ public function __construct($login="",$password=""){
 	$this->setDessenha($password);
 }
 
+public function update($password){
+	$this->setDessenha($password);
+
+	$sql = new Sql();
+	$sql->query("UPDATE tb_usuarios SET dessenha = :PASSWORD WHERE idusuario = :ID", array(
+		':PASSWORD'=>$this->getDessenha(),
+		';ID'=>$this->getIdusuario()
+
+	));
+
+}
+
 
 public function __toString(){
 
