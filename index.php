@@ -29,11 +29,17 @@ $aluno = new Usuario("Sidnei","daledele");
 $aluno->insert();
 echo $aluno;
 */
-
+/*alterar 
 $usuario = new Usuario();
 
 $usuario->loadByID(17);
-$usuario->update("lucas2131");
+$usuario->update(, "lucas2131");
+
+echo $usuario;
+*/
+$usuario = new Usuario();
+$usuario->loadByID(9);
+$usuario->delete();
 
 echo $usuario;
 
